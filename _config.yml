@@ -7,7 +7,7 @@
 
 # Site settings
 title: Picam360
-email: picam@ohmydigifab.com
+email: picam360@ohmydigifab.com
 description: > # this means to ignore newlines until "baseurl:"
   This project is a raspberry pi based panorama camera.
   Picam360 is opensource hardware and you can use its source code under GNU lisence.
