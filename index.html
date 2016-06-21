@@ -1,8 +1,24 @@
 ---
 layout: default
 ---
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2">
+<img width="740" src="/img/picam360-logo-jp.png" align="left"></img>
+</td>
+</tr>
+<tr>
+<td width="370">
+Picam360はRaspberry Piベース・オープンソースハードウェアの３６０度パノラマカメラです。Raspberry Piユーザーに「最もリーズナブルなパノラマカメラ」を提供します。
+プロジェクトの目的は、「パノラマ映像」と「Raspberry Piの拡張性」を融合することでVRガジェットを生み出すプラットフォームの構築です。そこから生まれてくる製品・サービスで新しいユーザーエクスペリエンスを提供します。
 
-
+</td>
+<td>
+<img width="370" src="/img/picam360-appearance.png" align="right"></img>
+</td>
+</tr>
+<tr>
+<td>
 <script>
 window.addEventListener('deviceorientation', function(attitude){
    var data = {'function' : 'dispatchEvent', 'event_name' : 'deviceorientation', 'event_data' : JSON.stringify(attitude)};
@@ -12,26 +28,11 @@ window.addEventListener('deviceorientation', function(attitude){
    document.getElementById("picam360-viewer").contentWindow.postMessage(JSON.stringify(data), origin);
 });
 </script>
-
-<iframe width="640" height="400" id="picam360-viewer" src="https://picam360.github.io/picam360-viewer/?fov=90&view-offset=30,0,200&auto-scroll=on&default-image-url=https://picam360.github.io/img/sample-the-deck.jpeg" frameborder="1"></iframe>
+<iframe width="370" height="370" id="picam360-viewer" src="https://picam360.github.io/picam360-viewer/?fov=90&view-offset=30,0,200&auto-scroll=on&default-image-url=https://picam360.github.io/img/sample-the-deck.jpeg" frameborder="0" align="left"></iframe>
+</td>
+<td>
+<p>Picam360ユーザーアプリはブラウザアプリなので右のようにページに埋め込むこともできます。</p>
 <p>オートスクロールはクリックorタッチすると止まります。</p>
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</td>
+</tr>
+</table>
