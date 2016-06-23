@@ -1,17 +1,36 @@
 ---
 layout: default
 ---
+
+<font size="3" face="Impact">
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td colspan="2">
-<img width="740" src="/img/picam360-logo-jp.png" align="left"></img>
+<td>
+<img width="370" src="/img/picam360-logo-square-jp.png" align="left"></img>
+</td>
+<td width="370">
+<p>
+Picam360はRaspberry Piベース・オープンソースハードウェアの３６０度パノラマカメラです。Raspberry Piユーザーに「最もリーズナブルなパノラマカメラ」を提供します。
+プロジェクトの目的は、「パノラマ映像」と「Raspberry Piの拡張性」を融合することでVRガジェットを生み出すプラットフォームの構築です。そこから生まれてくる製品・サービスで新しいユーザーエクスペリエンスを提供します。
+</p>
 </td>
 </tr>
 <tr>
 <td width="370">
-Picam360はRaspberry Piベース・オープンソースハードウェアの３６０度パノラマカメラです。Raspberry Piユーザーに「最もリーズナブルなパノラマカメラ」を提供します。
-プロジェクトの目的は、「パノラマ映像」と「Raspberry Piの拡張性」を融合することでVRガジェットを生み出すプラットフォームの構築です。そこから生まれてくる製品・サービスで新しいユーザーエクスペリエンスを提供します。
+<p>
+HardwareはOpenSCADで設計されています。
+レーザーカッターでパーツを切り出すことができます。
+</p>
 
+<p>
+ElectronicsはEagleCADで設計されています。
+GERBERデータをPCB Fabricationサービスで製造できます。
+</p>
+
+<p>
+SoftwareはNodeJS&HTML5+JS+WebGLで設計されています。
+Plugin方式を採用しているので、機能を拡張することも容易です。
+</p>
 </td>
 <td>
 <img width="370" src="/img/picam360-appearance.png" align="right"></img>
@@ -28,11 +47,27 @@ window.addEventListener('deviceorientation', function(attitude){
    document.getElementById("picam360-viewer").contentWindow.postMessage(JSON.stringify(data), origin);
 });
 </script>
-<iframe width="370" height="370" id="picam360-viewer" src="https://picam360.github.io/picam360-viewer/?fov=90&view-offset=30,0,200&auto-scroll=on&default-image-url=https://picam360.github.io/img/sample-the-deck.jpeg" frameborder="0" align="left"></iframe>
+<iframe width="370" height="370" id="picam360-viewer" src="https://picam360.github.io/picam360-viewer/?fov=70&view-offset=20,0,200&auto-scroll=on&default-image-url=https://picam360.github.io/img/sample-the-deck.jpeg" frameborder="0" align="left"></iframe>
 </td>
 <td>
-<p>Picam360ユーザーアプリはブラウザアプリなので右のようにページに埋め込むこともできます。</p>
-<p>オートスクロールはクリックorタッチすると止まります。</p>
+<p>
+Picam360ユーザーアプリはブラウザアプリなので右のようにページに埋め込むこともできます。
+オートスクロールはDrag or Swipeすると止まります。
+</p>
+</td>
+</tr>
+<tr>
+<td width="370">
+<p>
+Picam360のパノラマレンズは水平360°、垂直235°が撮像できます。
+Raspberry Piのオフィシャルカメラの1/4'サイズのイメージセンサにぴったり合うように設計されています。
+</p>
+</td>
+<td>
+<a href="/img/spec-sheet-jp.png">
+<img width="370" src="/img/spec-sheet-jp.png" align="right"></img>
+</a>
 </td>
 </tr>
 </table>
+</font>
