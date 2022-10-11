@@ -1,0 +1,11 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.picam360.app.pviewer",
+            "sha256_cert_fingerprints":
+            ["80:AF:9E:61:D1:26:23:6A:53:80:FA:6D:C8:3B:6A:48:CD:46:16:FE:3D:7B:87:75:FD:1A:88:90:30:FF:1C:5B"]
+        }
+    }
+]

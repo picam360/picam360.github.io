@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TQ5D9B52DN.com.picam360.app.pviewer",
+        "paths": [
+          "/pviewer/*"
+        ]
+      }
+    ]
+  }
+}
