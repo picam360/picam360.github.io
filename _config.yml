@@ -16,6 +16,7 @@ url: "http://picam.github.io" # the base hostname & protocol for your site
 twitter_username: picam360
 github_username:  picam360
 facebook_username:  picam360
+include: [".well-known"]
 
 # Build settings
 markdown: kramdown
